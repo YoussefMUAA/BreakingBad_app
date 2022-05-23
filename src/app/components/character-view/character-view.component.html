@@ -1,0 +1,17 @@
+<section class="container card mt-4 p-4">
+  <div class="row">
+    <figure class="col-12 col-md-4">
+      <img class="img-fluid" [src]="character?.img" [alt]="character?.nickname">
+    </figure>
+    <div class="col-12 col-md-8">
+      <h2>{{ character?.name }}</h2>
+      <ul class="list-group">
+        <li class="list-group-item">Ocupacion: <strong>{{character?.occupation}}</strong></li>
+        <li class="list-group-item">Fecha Nacimiento: <strong>{{character?.birthday}}</strong></li>
+        <li class="list-group-item">Actor: <strong>{{character?.portrayed}}</strong></li>
+        <li class="list-group-item">Estado: <strong>{{character?.status}}</strong></li>
+      </ul>
+      <button class="btn btn-warning mt-4" [routerLink]="['/home']">Volver</button>
+    </div>
+  </div>
+</section>

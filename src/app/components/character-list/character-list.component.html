@@ -1,0 +1,11 @@
+<section class="container mt-3">
+  <h1 class="text-bold">Personajes</h1>
+  <hr>
+  <div class="row g-4">
+    <!-- en este article aplica el ngFor con cada personaje-->
+    <article *ngFor="let character of arrCharacters" class="col-12 col-md-6 col-lg-4">
+      <app-character-card [myCharacter]="character"></app-character-card>
+    </article>
+
+  </div>
+</section>

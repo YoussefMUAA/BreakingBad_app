@@ -1,0 +1,8 @@
+<div class="card shadow border border-3 border-warning">
+  <div class="card-img-top myCardimg" [ngStyle]="{ 'background-image': 'url(' + myCharacter?.img + ')'}">
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{myCharacter?.name}}</h5>
+    <a [routerLink]="['/character', myCharacter?.char_id]" class="btn btn-warning">Ver detalle</a>
+  </div>
+</div>
